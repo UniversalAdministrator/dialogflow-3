@@ -16,7 +16,7 @@ if ($method == "POST"){
 
   $response = new \stdClass();
   $response->fulfillmentText = "tjenare";
-  $response->fulfillmentMessages = $result;
+  $response->fulfillmentMessages[] = array('title'=> 'hejsan', 'url'=>'www.google.com');
   $response->displayText = $result;
   $response->source = "webhook";
   echo json_encode($response);
