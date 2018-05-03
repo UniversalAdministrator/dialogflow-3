@@ -20,11 +20,11 @@ if ($method == "POST"){
   $punchline = $json->data->children[0]->data->selftext;
 
   // the string to be sent back to the user
-  $result = "tjenare";
+  $result = $title . $punchline;
 
   $response = new \stdClass();
-  $response->fulfillmentText = $title;
-  $response->fulfillmentMessages[] = array('text'=> array('text'=>[$title]));
+  $response->fulfillmentText = $result;
+  $response->fulfillmentMessages[] = array('text'=> array('text'=>[$result]));
   $response->source = "webhook";
   echo json_encode($response);
 } else {
