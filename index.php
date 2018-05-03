@@ -12,11 +12,11 @@ if ($method == "POST"){
   $text = strtoupper($text);
 
 
-  $result = ["tjenare"];
+  $result = "tjenare";
 
   $response = new \stdClass();
-  $response->fulfillmentText = "tjenare";
-  $response->fulfillmentMessages[] = array('text'=> array('text'=>['tjenare']));
+  $response->fulfillmentText = $result;
+  $response->fulfillmentMessages[] = array('text'=> array('text'=>[$result]));
   $response->source = "webhook";
   echo json_encode($response);
 } else {
