@@ -1,0 +1,66 @@
+{
+  "responseId": "087faa91-6150-4e44-9c37-268ded634a2a",
+  "queryResult": {
+    "queryText": "time report",
+    "parameters": {
+      "time": "",
+      "date": "",
+      "Client": ""
+    },
+    "fulfillmentText": "when did you work?",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "when did you work?"
+          ]
+        }
+      }
+    ],
+    "outputContexts": [
+      {
+        "name": "projects/avo-bot/agent/sessions/b0bcfc5a-2b0e-40ac-8aa8-a16b15f3869a/contexts/time_report_dialog_context",
+        "lifespanCount": 2,
+        "parameters": {
+          "time.original": "",
+          "time": "",
+          "Client": "",
+          "date": "",
+          "Client.original": "",
+          "date.original": ""
+        }
+      },
+      {
+        "name": "projects/avo-bot/agent/sessions/b0bcfc5a-2b0e-40ac-8aa8-a16b15f3869a/contexts/d167a8e2-9a2d-498b-bea6-3fb3e58868f3_id_dialog_context",
+        "lifespanCount": 2,
+        "parameters": {
+          "time": "",
+          "Client": "",
+          "date": "",
+          "Client.original": "",
+          "date.original": "",
+          "time.original": ""
+        }
+      },
+      {
+        "name": "projects/avo-bot/agent/sessions/b0bcfc5a-2b0e-40ac-8aa8-a16b15f3869a/contexts/time_report_dialog_params_date",
+        "lifespanCount": 1,
+        "parameters": {
+          "time.original": "",
+          "time": "",
+          "date": "",
+          "Client": "",
+          "Client.original": "",
+          "date.original": ""
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/avo-bot/agent/intents/d167a8e2-9a2d-498b-bea6-3fb3e58868f3",
+      "displayName": "Time Report"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {},
+    "languageCode": "en"
+  }
+}
